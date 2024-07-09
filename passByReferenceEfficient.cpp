@@ -26,13 +26,13 @@ int main()
     vector<int> vec(100);
     
     fill(begin(vec), end(vec), 1);
-    for (auto i : vec) {
+    for (auto const &i : vec) {
         std::cout << i << " ";
     };
     std::cout << std::endl << std::endl;
 
     fill(vec.begin(), vec.end(), 2);
-    for (auto i : vec) {
+    for (auto const &i : vec) {
         std::cout << i << " ";
     };
     std::cout << std::endl << std::endl;
