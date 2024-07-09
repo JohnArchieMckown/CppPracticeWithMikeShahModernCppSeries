@@ -3,3 +3,7 @@
 *~
 *.bak
 *.o
+a.out
+build/
+*.pro.user
+

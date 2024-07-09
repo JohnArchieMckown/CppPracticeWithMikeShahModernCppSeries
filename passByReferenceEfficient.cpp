@@ -23,10 +23,20 @@ void passByReference(std::vector<int>& alias)
 
 int main()
 {
-    vector<int> vec(100000000);
+    vector<int> vec(100);
     
     fill(begin(vec), end(vec), 1);
-    
+    for (auto i : vec) {
+        std::cout << i << " ";
+    };
+    std::cout << std::endl << std::endl;
+
+    fill(vec.begin(), vec.end(), 2);
+    for (auto i : vec) {
+        std::cout << i << " ";
+    };
+    std::cout << std::endl << std::endl;
+
     // Get starting timepoint
     auto start = high_resolution_clock::now();
     
