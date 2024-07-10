@@ -22,7 +22,7 @@ int main()
    std::cout << "---------------------------------\n";
    
     // Simple for loop with STL array container
-   for(int i=0; i<arr2.size(); i++)
+   for(size_t i=0; i<arr2.size(); i++)
    {
        std::cout << arr2[i] << std::endl;
    }
